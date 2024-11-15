@@ -1,0 +1,26 @@
+!pip install scikit-optimize
+import pandas as pd
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import math
+import zipfile
+import urllib.request
+import io
+import warnings
+from xgboost import XGBClassifier
+from sklearn.model_selection import GridSearchCV, cross_val_score, train_test_split, KFold
+from sklearn.linear_model import LogisticRegression
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import BaggingClassifier, RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier, ExtraTreesClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_curve, auc, roc_auc_score
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_digits
+from skopt import BayesSearchCV, plots
+from skopt.space import Real, Categorical, Integer
+warnings.filterwarnings('ignore')
